@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawakkal Fodders & Medical Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="twakal  logo.jpeg" type="image/x-icon">
+    
+    <!-- Lottie Web Component Script -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+    
+    <style>
+        /* Loading Animation Styles */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        /* Hide content initially */
+        body:not(.loaded) header,
+        body:not(.loaded) section,
+        body:not(.loaded) footer {
+            opacity: 0;
+        }
+        
+        body.loaded header,
+        body.loaded section,
+        body.loaded footer {
+            opacity: 1;
+            transition: opacity 0.8s ease;
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- Loading Animation -->
+    <div id="loader">
+        <dotlottie-wc 
+            src="https://lottie.host/316192d7-8425-4bda-894b-ecfea422a7bc/8AV2PqmrQX.lottie" 
+            style="width: 300px; height: 300px" 
+            autoplay 
+            loop>
+        </dotlottie-wc>
+    </div>
+    
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                   <img src="twakal__logo-removebg-preview.png" alt="">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('twakal  logo.jpeg');">
+                <div class="slide-content">
+                    <h1>Your Health, Our Priority</h1>
+                    <p>Tawakkal Fodders provides quality healthcare products and services with care and compassion. We're here to support your wellness journey every step of the way.</p>
+                    <div class="slide-btns">
+                        <a href="#services" class="btn">Our Services</a>
+                        <a href="#contact" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('1 (2).jpeg');">
+                <div class="slide-content">
+                    <h1>Expert Pharmacist Consultation</h1>
+                    <p>Our licensed pharmacists are available to provide personalized advice and answer all your medication-related questions.</p>
+                    <div class="slide-btns">
+                        <a href="#services" class="btn">Our Services</a>
+                        <a href="#contact" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('1 (3).jpeg');">
+                <div class="slide-content">
+                    <h1>Wide Range of Healthcare Products</h1>
+                    <p>From prescription medications to over-the-counter remedies, we have everything you need for your health and wellness.</p>
+                    <div class="slide-btns">
+                        <a href="#products" class="btn">View Products</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide" style="background-image: url('1 (4).jpeg');">
+                <div class="slide-content">
+                    <h1>Visit Our Store</h1>
+                    <p>Come visit our well-stocked Store with a wide selection of healthcare products and friendly staff ready to assist you.</p>
+                    <div class="slide-btns">
+                        <a href="#services" class="btn">Our Services</a>
+                        <a href="#map-section" class="btn btn-outline">Find Location</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="slide" style="background-image: url('1 (5).jpeg');">
+                <div class="slide-content">
+                    <h1>Immunization Services</h1>
+                    <p>Protect yourself and your family with our comprehensive immunization services, including flu shots and travel vaccines.</p>
+                    <div class="slide-btns">
+                        <a href="#services" class="btn">View Services</a>
+                        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide" style="background-image: url('1 (6).jpeg');">
+                <div class="slide-content">
+                    <h1>Immunization Services</h1>
+                    <p>Protect yourself and your family with our comprehensive immunization services, including flu shots and travel vaccines.</p>
+                    <div class="slide-btns">
+                        <a href="#services" class="btn">View Services</a>
+                        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+             
+            <!-- Slide 7 -->
+            <div class="slide" style="background-image: url('1 (7).jpeg');">
+                <div class="slide-content">
+                    <h1>Immunization Services</h1>
+                    <p>Protect yourself and your family with our comprehensive immunization services, including flu shots and travel vaccines.</p>
+                    <div class="slide-btns">
+                        <a href="#services" class="btn">View Services</a>
+                        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="slide" style="background-image: url('1 (8).jpeg');">
+                <div class="slide-content">
+                    <h1>Immunization Services</h1>
+                    <p>Protect yourself and your family with our comprehensive immunization services, including flu shots and travel vaccines.</p>
+                    <div class="slide-btns">
+                        <a href="#services" class="btn">View Services</a>
+                        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+        </div>
+        
+        <!-- Slider Arrows -->
+        <div class="slider-arrows">
+            <div class="slider-arrow prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="slider-arrow next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About MediCare </h2>
+                    <p>Established in 2005,Tawakkalfodders has been serving the community with dedication and care. Our mission is to provide accessible healthcare solutions and personalized service to every customer.</p>
+                    <p>Our team of licensed pharmacists and healthcare professionals are committed to ensuring you receive the right medications and health advice for your needs.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Licensed Professionals</h4>
+                                <p>Our staff includes certified pharmacists and healthcare experts.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Quality Products</h4>
+                                <p>We source medicines and products from trusted manufacturers.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Customer Care</h4>
+                                <p>We prioritize your health and wellbeing above everything else.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Community Focus</h4>
+                                <p>We actively participate in community health initiatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/bb576bdd-4444-43d5-a90a-3b13b8fc2438/27HhGIc86a.lottie" style="width: 350px;height: 350px" autoplay loop></dotlottie-wc>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer a comprehensive range of Store services to meet all your healthcare needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-prescription-bottle-alt"></i>
+                    </div>
+                    <h3>Prescription Services</h3>
+                    <p>We fill prescriptions quickly and accurately, with options for automatic refills and medication synchronization.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Pharmacist Consultation</h3>
+                    <p>Our pharmacists are available for private consultations to discuss medications, side effects, and health concerns.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Immunizations</h3>
+                    <p>We provide flu shots and other vaccinations to help protect you and your family from preventable diseases.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Screenings</h3>
+                    <p>Regular health screenings for blood pressure, cholesterol, and blood glucose to monitor your health.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Medication Therapy Management</h3>
+                    <p>Comprehensive review of your medications to ensure they're working together effectively and safely.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>In-Store Pickup</h3>
+                    <p>Convenient in-store pickup for your prescription medications and healthcare products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>We carry a wide selection of healthcare products available for purchase in-store.</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="in-store-badge">Available In-Store</div>
+                    <div class="product-image">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Prescription Medications</h3>
+                        <div class="product-category">Pharmaceuticals</div>
+                        <p>We carry a full range of prescription drugs for various health conditions.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="in-store-badge">Available In-Store</div>
+                    <div class="product-image">
+                        <i class="fas fa-capsules"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Over-the-Counter Medicines</h3>
+                        <div class="product-category">OTC Products</div>
+                        <p>Pain relievers, cold & flu medications, allergy relief, and more.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="in-store-badge">Available In-Store</div>
+                    <div class="product-image">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Baby Care Products</h3>
+                        <div class="product-category">Infant Care</div>
+                        <p>Diapers, baby formula, vitamins, and other essentials for your little ones.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="in-store-badge">Available In-Store</div>
+                    <div class="product-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vitamins & Supplements</h3>
+                        <div class="product-category">Nutrition</div>
+                        <p>Multivitamins, minerals, herbal supplements, and specialty nutrition products.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="in-store-badge">Available In-Store</div>
+                    <div class="product-image">
+                        <i class="fas fa-band-aid"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>First Aid Supplies</h3>
+                        <div class="product-category">Medical Supplies</div>
+                        <p>Bandages, antiseptics, thermometers, and other first aid essentials.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="in-store-badge">Available In-Store</div>
+                    <div class="product-image">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Personal Care</h3>
+                        <div class="product-category">Beauty & Hygiene</div>
+                        <p>Skincare, oral care, hair care, and other personal hygiene products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="pharmacy-badge">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Tawakkal Fodders & Medical Store</span>
+                </div>
+                <h2>Contact Our Medical Store</h2>
+                <p>Get in touch with our licensed pharmacists for medication consultations, prescription refills, and healthcare advice.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Store Location</h3>
+                            <p>Graveyard, Sherpao, Army Chowki Road, near Afridi Coach Bus Stop, Naval Land Landhi Town, Karachi, 75120, Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+923132837031">+92 313 2837031</a>
+                                </a><br>Prescription Refill Line</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Store Email</h3>
+                            <p><a href="mailto:tawakkalfodders@gmail.com">tawakkalfodders@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Store Hours</h3>
+                            <p>Monday - Thursday: 9:00 AM - 8:00 PM<br> Friday - OFF </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <div class="medical-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                    </svg>
+                </div>
+                <h3>Medical Store</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Patient Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter patient full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Inquiry Type</label>
+                        <select id="subject" class="form-control" required>
+                            <option value="">Select inquiry type</option>
+                            <option value="prescription">Prescription Refill</option>
+                            <option value="consultation">Pharmacist Consultation</option>
+                            <option value="medication">Medication Question</option>
+                            <option value="insurance">Insurance Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Describe your Store needs, medication questions, or prescription details..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send to Store
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google reviews -->
+    <script  src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-1e84744e-a853-4e5a-9145-656514677d17" data-elfsight-app-lazy></div>
+
+    <!-- Map Section -->
+    <section id="map-section" class="map-section">
+        <div class="map-container">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.9784754952375!2d67.2017284!3d24.8304097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3314ba5dca8e7%3A0xa4975f250d8811!2sTawakkal%20Fodders%20%26%20Medical%20Store!5e0!3m2!1sen!2s!4v1764412289279!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Tawakkal Fodders & Medical Store</h3>
+                    <p>Your trusted partner in health and wellness. We're committed to providing quality healthcare products and services to our community.</p>
+                    <div class="social-links">
+                        <h4>Follow Us:-></h4>
+                        <a href="https://www.facebook.com/profile.php?id=100083242957015" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/tawakkalfodders/"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Prescription Services</a></li>
+                        <li><a href="#">Pharmacist Consultation</a></li>
+                        <li><a href="#">Immunizations</a></li>
+                        <li><a href="#">Health Screenings</a></li>
+                        <li><a href="#">In-Store Pickup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i>Graveyard, Sherpao, Army Chowki Road, near Afridi Coach Bus Stop, Naval Land Landhi Town, Karachi, 75120, Pakistan</li>
+                        <li><i class="fas fa-phone-alt"></i><a href="tel:+923132837031">+92 313 2837031</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:tawakkalfodders@gmail.com">tawakkalfodders@gmail.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon - Thur : 9AM - 8PM, <br>Friday - OFF</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tawakkal Fodders & Medical Store.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
